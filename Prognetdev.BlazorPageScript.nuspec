@@ -15,7 +15,7 @@
     <readme>readme.md</readme>
   </metadata>
   <files>
-    <file src="Prognetdev.Templates.Console\**" target="content" exclude="**\bin\**;**\obj\**" />
+    <file src="Prognetdev.BlazorPageScript\**" target="content" exclude="**\bin\**;**\obj\**" />
     <file src="readme.md" target="" />
   </files>
 </package>
