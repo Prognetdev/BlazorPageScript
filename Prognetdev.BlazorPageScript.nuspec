@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Prognetdev.BlazorPageScript</id>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <authors>Tomasz Sikora</authors>
     <owners>Tomasz Sikora</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
