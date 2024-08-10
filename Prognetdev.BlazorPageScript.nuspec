@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Prognetdev.BlazorPageScript</id>
-    <version>1.3.0</version>
+    <version>1.4.0</version>
     <authors>Tomasz Sikora</authors>
     <owners>Tomasz Sikora</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,8 +14,4 @@
     <license type="expression">MIT</license>
     <readme>readme.md</readme>
   </metadata>
-  <files>
-    <file src=".\**" target="content" exclude="**\bin\**;**\obj\**" />
-    <file src="readme.md" target="" />
-  </files>
 </package>
