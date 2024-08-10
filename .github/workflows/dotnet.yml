@@ -16,11 +16,15 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 8.0.x
-        env:
-          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}} # If needed for dotnet restore or other commands
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
 
       - name: Pack
-        run: nuget pack Prognetdev.BlazorPageScript.nuspec -OutputDirectory out
+        run: dotnet pack --configuration Release --no-restore --output ./out
 
       - name: Push
         run: dotnet nuget push "./out/*.nupkg" --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
