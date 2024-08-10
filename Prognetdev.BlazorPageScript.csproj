@@ -6,19 +6,36 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyName>Prognetdev.BlazorPageScript</AssemblyName>
     <RootNamespace>Prognetdev.BlazorPageScript</RootNamespace>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>Prognetdev.BlazorPageScript</PackageId>
+    <Version>1.5.0</Version>
+    <Authors>Tomasz Sikora</Authors>
+    <Company>Tomasz Sikora</Company>
+    <Description>Blazor PageScript component as Razor Class Library (RCL) for loading scripts when doing SSR with enhanced navigation and forms</Description>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <Copyright>Copyright 2024</Copyright>
+    <PackageTags>prognetdev blazor pagescript ssr enhanced navigation</PackageTags>
+    <RepositoryUrl>https://github.com/Prognetdev/BlazorPageScript</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="readme.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.7" />
+    <Content Include=".github\workflows\dotnet.yml" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include=".github\workflows\dotnet.yml" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
