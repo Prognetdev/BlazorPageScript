@@ -9,7 +9,7 @@
 
     <!-- NuGet Package Metadata -->
     <PackageId>Prognetdev.BlazorPageScript</PackageId>
-    <Version>1.5.0</Version>
+    <Version>1.6.0</Version>
     <Authors>Tomasz Sikora</Authors>
     <Company>Tomasz Sikora</Company>
     <Description>Blazor PageScript component as Razor Class Library (RCL) for loading scripts when doing SSR with enhanced navigation and forms</Description>

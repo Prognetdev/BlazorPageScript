@@ -34,7 +34,6 @@ async function initializePageScriptModule(src, pageScriptInfo) {
     if (src.startsWith("./")) {
         src = new URL(src.substr(2), document.baseURI).toString();
     }
-    console.log(src);
 
     const module = await import(src);
 
@@ -58,7 +57,6 @@ function onEnhancedLoad() {
     for (const { module } of pageScriptInfoBySrc.values()) {
         module?.onUpdate?.();
     }
-    console.log('Enhanced load');
 }
 
 export function afterWebStarted(blazor) {
@@ -81,5 +79,4 @@ export function afterWebStarted(blazor) {
     });
 
     blazor.addEventListener('enhancedload', onEnhancedLoad);
-    console.log('BlazorPageScript module initialized');
 }
